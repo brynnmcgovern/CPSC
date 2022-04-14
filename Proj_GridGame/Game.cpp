@@ -387,7 +387,7 @@ bool Game::isCloseToTarget(int iRow, int iColumn)
 	// Set bClose to true in the if block indicating the torpedo location is "close to the location of
 	// the target boat.
 	// /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ //
-	if (((iRow == this->m_iRowBoat) || (iRow + 1 == this->m_iRowBoat)) && ((iColumn == this->m_iColumnBoat) || (iColumn + 1 == this->m_iColumnBoat)) )
+	if ((std::abs(iRow - this->m_iRowBoat) <= 1) && (std::abs(iColumn - this->m_iColumnBoat) <= 1) )
 	{
 		bClose = true;
 	}
