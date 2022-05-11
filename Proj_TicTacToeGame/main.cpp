@@ -1,9 +1,9 @@
 #include <iostream>
-#include "ToeGame.h"
+#include "TicTacToeGame.h"
 using namespace std;
 
 int main(){
-  ToeGame *Game = new ToeGame();
+  TicTacToeGame *Game = new TicTacToeGame();
   Game->play();
 
   delete Game;
