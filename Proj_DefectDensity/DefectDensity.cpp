@@ -48,8 +48,8 @@ int main()
 
       std::cout << "Enter size of program unit in size units such as SLOC: " << std::endl;
       std::cin >> nProgramUnitSize;
-      if(!(nProgramUnitSize >= 0)){
-        std::string strMessage = "Invalid program size: " + std::to_string(nProgramUnitSize) + "; program size must be >= 0" +
+      if(!(nProgramUnitSize > 0)){
+        std::string strMessage = "Invalid program size: " + std::to_string(nProgramUnitSize) + "; program size must be > 0" +
                                   " (Loc: " + __FILE__ + ", " + std::to_string(__LINE__) + ")";
         throw std::runtime_error(strMessage);
       }
