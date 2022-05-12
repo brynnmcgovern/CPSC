@@ -84,7 +84,7 @@ Circle::~Circle()
 
 double Circle::area()
 {
-	return ((this->m_dHeight * this->m_dWidth) * M_PI * (1/4));
+	return ((this->m_dHeight * this->m_dWidth) * M_PI * (1.0/4.0));
 }
 
 double Circle::perimeter(){
